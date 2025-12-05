@@ -1,0 +1,18 @@
+.personalizationContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-corral-border-radius);
+}
+
+.toggle {
+  display: flex;
+  margin-left: 1rem;
+}
+
+.toggle label {
+  margin-right: 1rem;
+  cursor: pointer;
+}

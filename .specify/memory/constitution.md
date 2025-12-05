@@ -1,93 +1,55 @@
-<!--
----
-sync_impact_report:
-  version_change: "0.0.0 → 1.0.0"
-  modified_principles:
-    - "Clarity (New)"
-    - "Accuracy (New)"
-    - "Minimalism (New)"
-    - "Practicality (New)"
-    - "Maintainability (New)"
-  added_sections:
-    - "Core Principles"
-    - "Scope, Deliverables, and Technology"
-    - "Constraints and Success Criteria"
-    - "Governance"
-  removed_sections: []
-  updated_templates:
-    - path: ".specify/templates/plan-template.md"
-      status: "✅"
-    - path: ".specify/templates/spec-template.md"
-      status: "✅"
-    - path: ".specify/templates/tasks-template.md"
-      status: "✅"
-  todos: []
----
--->
-# Physical AI & Humanoid Robotics Textbook (4-Chapter Edition) Constitution
-
-## Vision
-
-Create a concise, modern, AI-Native textbook from foundational robotics to VLA-driven humanoid control. Must be simple, reliable, and powered by an integrated RAG chatbot.
+# [PROJECT_NAME] Constitution
+<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
 
 ## Core Principles
 
-### I. Clarity
-The textbook must be written in simple, accessible language, avoiding unnecessary jargon. Concepts should be explained with clear, real-world examples.
+### [PRINCIPLE_1_NAME]
+<!-- Example: I. Library-First -->
+[PRINCIPLE_1_DESCRIPTION]
+<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
 
-### II. Accuracy
-All technical information, code examples, and theoretical explanations must be factually correct and up-to-date.
+### [PRINCIPLE_2_NAME]
+<!-- Example: II. CLI Interface -->
+[PRINCIPLE_2_DESCRIPTION]
+<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
 
-### III. Minimalism
-The content should be focused and concise. "You Aren't Gonna Need It" (YAGNI) is a key principle. Avoid content that is not essential to the core learning objectives.
+### [PRINCIPLE_3_NAME]
+<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
+[PRINCIPLE_3_DESCRIPTION]
+<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
 
-### IV. Practicality
-The textbook must provide hands-on, practical examples and projects that readers can build and experiment with.
+### [PRINCIPLE_4_NAME]
+<!-- Example: IV. Integration Testing -->
+[PRINCIPLE_4_DESCRIPTION]
+<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
 
-### V. Maintainability
-The accompanying code and the textbook itself must be easy to update and maintain over time. This includes clear documentation, modular code, and a consistent structure.
+### [PRINCIPLE_5_NAME]
+<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
+[PRINCIPLE_5_DESCRIPTION]
+<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
 
-## Scope, Deliverables, and Technology
+### [PRINCIPLE_6_NAME]
 
-### Scope (4 Chapters)
-1.  Physical AI Foundations (embodiment, sensing, actuation)
-2.  ROS 2 Essentials (nodes, topics, TF, services)
-3.  Digital Twin Simulation (Gazebo/Isaac Sim, URDF/SDF)
-4.  VLA + Capstone Pipeline (Vision-Language-Action concepts)
 
-### Required Deliverables
-- Docusaurus v3 website
-- Auto sidebar/navigation
-- Fully integrated free-tier RAG chatbot
-- Select-text → Ask AI support
-- GitHub Pages deployment
+[PRINCIPLE__DESCRIPTION]
 
-### Key Features/Tech
-- Docusaurus UI
-- Qdrant (Free Tier) vector DB
-- Neon Serverless Postgres (Free Tier)
-- FastAPI backend
-- Chapter-level embeddings
-- Highlight-to-question chatbot integration
+## [SECTION_2_NAME]
+<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
 
-## Constraints and Success Criteria
+[SECTION_2_CONTENT]
+<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
 
-### Constraints
-- Must deploy on GitHub Pages
-- Backend must run on free-tier platforms (Railway/Render)
-- All embeddings strictly from textbook content
-- No GPU-required workflows
-- All API calls within free-tier limits
+## [SECTION_3_NAME]
+<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
 
-### Success Criteria
-- Book builds without errors
-- Chatbot retrieves accurate, book-only answers
-- GitHub Pages deployment succeeds
-- Backend deploys with working health checks
-- Select-text workflow smooth
+[SECTION_3_CONTENT]
+<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
 
 ## Governance
+<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-This Constitution is the single source of truth for project scope, principles, and technical architecture. Amendments require a documented proposal, review, and approval by the project lead. A migration plan is required for any changes impacting existing architecture or content. All development work, pull requests, and reviews must explicitly verify compliance with these principles.
+[GOVERNANCE_RULES]
+<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
 
-**Version**: 1.0.0 | **Ratified**: 2025-12-05 | **Last Amended**: 2025-12-05
+**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
+<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
