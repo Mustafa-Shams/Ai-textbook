@@ -15,15 +15,12 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  // TODO: Update this to your GitHub pages url
   url: 'https://Mustafa-Shams.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/Ai-textbook/',
 
   // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  // TODO: Update this to your GitHub org/user name.
   organizationName: 'Mustafa-Shams', // Usually your GitHub org/user name.
   projectName: 'Ai-textbook', // Usually your repo name.
 
@@ -41,8 +38,12 @@ const config: Config = {
     [
       'classic',
       {
+        docs: {
+          sidebarPath: './sidebars.ts',
+          // Please change this to your repo.
           editUrl:
             'https://github.com/Mustafa-Shams/Ai-textbook/tree/main/',
+        },
         blog: {
           showReadingTime: true,
           feedOptions: {
@@ -50,7 +51,6 @@ const config: Config = {
             xslt: true,
           },
           // Please change this to your repo.
-          // TODO: Update this to your repo.
           editUrl:
             'https://github.com/Mustafa-Shams/Ai-textbook/tree/main/',
           // Useful options to enforce blogging best practices
@@ -84,7 +84,11 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
+        {
           href: 'https://github.com/Mustafa-Shams/Ai-textbook',
+          label: 'GitHub',
+          position: 'right',
+        },
       ],
     },
     footer: {
